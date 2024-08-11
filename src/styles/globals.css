@@ -1,0 +1,131 @@
+:root {
+  --black: #0f0f10;
+  --dark: #262c62;
+  --secondary: #bfbfcf;
+  --white: #fff;
+  --gray-100: #f2f2f2;
+  --danger: #f9786d;
+  --success: #6eda78;
+  --warning: #ffa200;
+  --border-radius-lg: 20px;
+  --body-color: #85879d;
+}
+body {
+  font-family: "Kanit", sans-serif;
+  color: var(--black);
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0px !important;
+}
+button {
+  font-family: "Kanit", sans-serif !important;
+  color: var(--white);
+  font-size: 16px !important;
+  font-weight: 400;
+  font-style: normal;
+}
+.w-100 {
+  width: 100% !important;
+}
+.gradient-light-blue {
+  background-color: var(--success);
+  background: linear-gradient(-45deg, var(--warning) 0%, var(--success) 100%);
+  height: 100vh;
+}
+.set-page {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+}
+.btn-primary {
+  border-radius: var(--border-radius-lg);
+  background-color: var(--gray-100);
+  color: var(--body-color);
+  padding: 20px;
+}
+.btn-primary:hover {
+  opacity: 0.9;
+  border-radius: var(--border-radius-lg) !important;
+  background-color: var(--gray-100) !important;
+  color: var(--body-color) !important;
+  padding: 20px;
+}
+.txt-h1 {
+  color: var(--white) !important;
+  font-weight: 200;
+}
+.triangle-left {
+  width: 0;
+  height: 0;
+  border-bottom: 100px solid var(--body-color);
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  transform: rotate(270deg);
+}
+.box-triangle {
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+.triangle-top {
+  width: 0;
+  height: 0;
+  border-bottom: 100px solid var(--body-color);
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+}
+.triangle-buttom {
+  width: 0;
+  height: 0;
+  border-top: 100px solid var(--body-color);
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+}
+.square {
+  margin: 10px;
+  width: 80px;
+  height: 80px;
+  background: var(--body-color);
+}
+.circle {
+  margin: 10px;
+  width: 80px;
+  height: 80px;
+  border-radius: 10rem;
+  background: var(--body-color);
+}
+.ellipse {
+  margin: 20px 10px;
+  width: 120px;
+  height: 60px;
+  background: var(--body-color);
+  -moz-border-radius: 100px / 50px;
+  -webkit-border-radius: 100px / 50px;
+  border-radius: 100px / 50px;
+}
+.cloth-square {
+  margin: 10px;
+  width: 120px;
+  height: 80px;
+  background: var(--body-color);
+}
+.cloth-square-top {
+  margin: 10px;
+  width: 120px;
+  height: 80px;
+  background: var(--body-color);
+}
+.parallelogram {
+  margin: 10px;
+  width: 120px;
+  height: 80px;
+  background: var(--body-color);
+  -webkit-transform: skew(20deg);
+  -moz-transform: skew(20deg);
+  -o-transform: skew(20deg);
+  transform: skew(20deg);
+}
