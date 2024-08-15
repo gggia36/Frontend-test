@@ -28,6 +28,9 @@ button {
 .w-100 {
   width: 100% !important;
 }
+.h-100 {
+  height: 100% !important;
+}
 .gradient-light-blue {
   background-color: var(--success);
   background: linear-gradient(-45deg, var(--warning) 0%, var(--success) 100%);
@@ -66,10 +69,18 @@ button {
   border-right: 50px solid transparent;
   transform: rotate(270deg);
 }
+.triangle-right {
+  width: 0;
+  height: 0;
+  border-bottom: 100px solid var(--body-color);
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  transform: rotate(90deg);
+}
 .box-triangle {
-  padding: 10px;
-  background-color: #fff;
-  border-radius: 8px;
+  padding: 10px !important;
+  background-color: #fff !important;
+  border-radius: 8px !important;
 }
 .triangle-top {
   width: 0;
@@ -118,7 +129,9 @@ button {
   width: 120px;
   height: 80px;
   background: var(--body-color);
+  clip-path: polygon(25% 0%, 75% 0%, 100% 100%, 0% 100%);
 }
+
 .parallelogram {
   margin: 10px;
   width: 120px;
@@ -128,4 +141,47 @@ button {
   -moz-transform: skew(20deg);
   -o-transform: skew(20deg);
   transform: skew(20deg);
+}
+
+.act-btn:hover {
+  background: var(--warning) !important;
+  cursor: pointer;
+  border: 1px solid transparent !important;
+}
+.position-relative {
+  position: relative;
+}
+.absolute-shape {
+  position: absolute;
+  bottom: -11%;
+  left: 28%;
+  background-color: var(--success);
+  padding: 7px 20px;
+  font-size: 11px;
+  border-radius: 16px;
+  color: var(--white);
+}
+.absolute-position {
+  position: absolute;
+  bottom: -11%;
+  left: 40%;
+  background-color: var(--success);
+  padding: 7px 20px;
+  font-size: 11px;
+  border-radius: 16px;
+  color: var(--white);
+}
+.absolute-shape-right {
+  position: absolute;
+  bottom: -11%;
+  left: 28%;
+  background-color: var(--success);
+  padding: 7px 20px;
+  font-size: 11px;
+  border-radius: 16px;
+  color: var(--white);
+}
+.position-top {
+  position: absolute;
+  top: 0%;
 }
